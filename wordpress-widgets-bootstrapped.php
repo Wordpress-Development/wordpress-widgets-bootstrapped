@@ -69,6 +69,7 @@ function wop_bootstrap_widget_output_filters( $widget_output, $widget_type, $wid
 		case 'recent-posts' :   	
         		$widget_output = str_replace('<ul>', '<ul class="list-group">', $widget_output);
         		$widget_output = str_replace('<li>', '<li class="list-group-item">', $widget_output);
+			$widget_output = str_replace('class="post-date"', 'class="post-date text-muted small"', $widget_output);
     			break;
 		case 'recent-comments' :   	
         		$widget_output = str_replace('<ul id="recentcomments">', '<ul id="recentcomments" class="list-group">', $widget_output);
