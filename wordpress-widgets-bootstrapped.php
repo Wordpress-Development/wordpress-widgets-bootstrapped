@@ -84,11 +84,8 @@ function wop_bootstrap_widget_output_filters( $widget_output, $widget_type, $wid
     		default:
 			$widget_output = $widget_output; // not sure if this is needed...
 	}
-	
       return $widget_output;
-      
 }
-
 add_filter( 'widget_output', 'wop_bootstrap_widget_output_filters', 10, 3 ); // not sure if this should be hooked into an action... maybe init or widgets_init
 
 
