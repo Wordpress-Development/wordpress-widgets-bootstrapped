@@ -1,15 +1,15 @@
 <?php
 /**
- * Wordpress Widget Filters
+ * Wordpress Widgets Bootstrapped
  *
- * @package   Wordpress Widget Filters
+ * @package    Wordpress Widgets Bootstrapped
  * @author    Bryan Willis
  * @license   GPL-2.0+
  * @link      http://wordpress.stackexchange.com/a/211634/43806
  *
  * @wordpress-plugin
- * Plugin Name:       Wordpress Widget Filters
- * Plugin URI:        https://github.com/Wordpress-Development/bootstrap-widgets.php
+ * Plugin Name:       Wordpress Widgets Bootstrapped
+ * Plugin URI:        https://github.com/Wordpress-Development/wordpress-widgets-bootstrapped
  * Description:       Add Bootstrap to wordpress widgets. Widget Output Filters plugin included. Requires Widget Output Filters Plugin and theme with Bootstrap 3 support.
  * Version:           1.0.0
  * Author:            Bryan Willis
@@ -17,11 +17,13 @@
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  */
+ 
 /**
  * This plugin does the following on activation:
  * - Checks if Widget Output Filters is activated and if not deactivate itself.
  * - Filters the html markup to support Bootstrap 3 styling. Without Botstrap enqueued it won't appear to do anything.
  */
+ 
 defined( 'WPINC' ) or die;
 register_activation_hook( __FILE__, 'activate_wop_bootstrap_register_activation_hook' );
 function activate_wop_bootstrap_register_activation_hook() {
@@ -31,6 +33,7 @@ function activate_wop_bootstrap_register_activation_hook() {
 		wp_die( sprintf( __( 'This theme requires a bootstrap supported theme and Widget Output Filters to work. You can\'t activate %1$sBootstrap-Widget-Filters%2$s until you install or activate the %3$sWidget Output Filters Plugin%4$s. Go back to the %5$sPlugins Page%4$s.' ), '<em>', '</em>', '<a href="'.$admin_url.'" target="_blank">', '</a>', '<a href="javascript:history.back()">' ) );
 	}
 }
+
 /** 
  * Bootstrap 3 support for core wordpress widgets
  */
