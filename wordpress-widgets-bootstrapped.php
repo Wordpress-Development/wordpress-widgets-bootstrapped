@@ -2,7 +2,7 @@
 /**
  * Wordpress Widgets Bootstrapped
  *
- * @package    Wordpress Widgets Bootstrapped
+ * @package   Wordpress Widgets Bootstrapped
  * @author    Bryan Willis
  * @license   GPL-2.0+
  * @link      http://wordpress.stackexchange.com/a/211634/43806
@@ -37,7 +37,7 @@ function activate_wop_bootstrap_register_activation_hook() {
 /** 
  * Bootstrap 3 support for core wordpress widgets
  */
-function brw_bootstrap_widget_output_filters( $widget_output, $widget_type, $widget_id ) {
+function wop_bootstrap_widget_output_filters( $widget_output, $widget_type, $widget_id ) {
 	
 	switch( $widget_type ) {
 		
@@ -87,4 +87,5 @@ function brw_bootstrap_widget_output_filters( $widget_output, $widget_type, $wid
       return $widget_output;
       
 }
-add_filter( 'widget_output', 'brw_bootstrap_widget_output_filters', 10, 3 );
+
+add_filter( 'widget_output', 'wop_bootstrap_widget_output_filters', 10, 3 ); // not sure if this should be hooked into an action... maybe init or widgets_init
