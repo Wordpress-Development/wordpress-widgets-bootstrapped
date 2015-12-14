@@ -58,21 +58,21 @@ function wop_bootstrap_widget_output_filters( $widget_output, $widget_type, $wid
     			break;
 		case 'archives' :	
       			$widget_output = str_replace('<ul>', '<ul class="list-group">', $widget_output);
-      			$widget_output = str_replace('<li>', '<li class="list-group-item archive-list-group-item">', $widget_output);
+      			$widget_output = str_replace('<li>', '<li class="list-group-item">', $widget_output);
 			$widget_output = str_replace('(', '<span class="badge cat-item-count"> ', $widget_output);
    			$widget_output = str_replace(')', ' </span>', $widget_output);
     			break;
 		case 'meta' :   	
         		$widget_output = str_replace('<ul>', '<ul class="list-group">', $widget_output);
-        		$widget_output = str_replace('<li>', '<li class="list-group-item meta-list-group-item">', $widget_output);
+        		$widget_output = str_replace('<li>', '<li class="list-group-item">', $widget_output);
     			break;
 		case 'recent-posts' :   	
         		$widget_output = str_replace('<ul>', '<ul class="list-group">', $widget_output);
-        		$widget_output = str_replace('<li>', '<li class="list-group-item recent-posts-list-group-item">', $widget_output);
+        		$widget_output = str_replace('<li>', '<li class="list-group-item">', $widget_output);
     			break;
 		case 'recent-comments' :   	
         		$widget_output = str_replace('<ul id="recentcomments">', '<ul id="recentcomments" class="list-group">', $widget_output);
-        		$widget_output = str_replace('<li class="recentcomments">', '<li class="recentcomments list-group-item recent-comments-list-group-item">', $widget_output);
+        		$widget_output = str_replace('<li class="recentcomments">', '<li class="recentcomments list-group-item">', $widget_output);
      			break;
 		case 'pages' :   	
 	        	$widget_output = str_replace('<ul>', '<ul class="nav nav-stacked nav-pills">', $widget_output);
