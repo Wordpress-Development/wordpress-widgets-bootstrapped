@@ -1,3 +1,9 @@
+/* fix tag spacing on certain themes */
+.tagcloud .label {
+    display: inline-block;
+}
+
+/* Force all dates to next line on Recent Posts */
 .widget_recent_entries .list-group-item a {
     display: block;
 }
