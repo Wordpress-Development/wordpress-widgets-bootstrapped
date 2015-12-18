@@ -1,6 +1,6 @@
 <?php
 /**
- * Wordpress Widgets Bootstrapped
+ * Wordpress Widgets Bootstrapped (for Widget Output Filters Plugin)
  *
  * @package   Wordpress Widgets Bootstrapped
  * @author    Bryan Willis
