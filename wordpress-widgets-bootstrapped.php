@@ -91,9 +91,9 @@ add_filter( 'widget_output', 'wop_bootstrap_widget_output_filters', 10, 3 ); // 
 
 
 /** 
- * Search form created seperately... to advanced for string replacement
+ * Search form created seperately... decided to use Wordpress builtin functionality for this
  */
-add_filter( 'get_search_form', 'wop_bootstrap_search_form');
+add_filter( 'get_search_form', 'wop_bootstrap_search_form', 100);
 function wop_bootstrap_search_form() {
     $value_or_placeholder = ( get_search_query() == '' ) ? 'placeholder' : 'value';
     $label = 'Search';
