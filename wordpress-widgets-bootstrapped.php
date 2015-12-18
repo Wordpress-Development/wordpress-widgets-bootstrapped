@@ -8,9 +8,9 @@
  * @link      http://wordpress.stackexchange.com/a/211634/43806
  *
  * @wordpress-plugin
- * Plugin Name:       Wordpress Widgets Bootstrapped
+ * Plugin Name:       Wordpress Widgets Bootstrapped (Widget Output Filters)
  * Plugin URI:        https://github.com/Wordpress-Development/wordpress-widgets-bootstrapped
- * Description:       Add Bootstrap to wordpress widgets. Widget Output Filters plugin included. Requires Widget Output Filters Plugin and theme with Bootstrap 3 support.
+ * Description:       Submodule for widget output filters to add Twitter Bootstrap markup to wordpress widgets. Widget Output Filters plugin included. Requires Widget Output Filters Plugin and theme with Bootstrap 3 support.
  * Version:           1.0.0
  * Author:            Bryan Willis
  * Author URI:        http://profiles.wordpress.org/codecandid
@@ -35,7 +35,7 @@ function activate_wop_bootstrap_register_activation_hook() {
 }
 
 /** 
- * Bootstrap 3 support for core wordpress widgets
+ * Bootstrap 3 support for core wordpress widgets 
  */
 function wop_bootstrap_widget_output_filters( $widget_output, $widget_type, $widget_id ) {
 	
@@ -52,7 +52,7 @@ function wop_bootstrap_widget_output_filters( $widget_output, $widget_type, $wid
         		$widget_output = str_replace('<table id="wp-calendar', '<table class="table table-condensed" id="wp-calendar', $widget_output);
     			break;
 		case 'tag_cloud' :    	
-			$regex = "/(<a[^>]+?)( style='font-size:.+pt;'>)([^<]+?)(<\/a>)/"; // can probably be cleaned up
+			$regex = "/(<a[^>]+?)( style='font-size:.+pt;'>)([^<]+?)(<\/a>)/"; //clean up
 			$replace_with = "$1><span class='label label-primary'>$3</span>$4";
 			$widget_output = preg_replace( $regex , $replace_with , $widget_output );
     			break;
@@ -82,7 +82,7 @@ function wop_bootstrap_widget_output_filters( $widget_output, $widget_type, $wid
 	        	$widget_output = str_replace(' class="menu"', 'class="menu nav nav-stacked nav-pills"', $widget_output);
 	    		break;
     		default:
-			$widget_output = $widget_output; // not sure if this is needed...
+			$widget_output = $widget_output; // not sure if this is needed
 	}
       return $widget_output;
 }
