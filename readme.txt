@@ -28,7 +28,7 @@ See this file for examples: https://github.com/Wordpress-Development/wordpress-w
 == Screenshots ==
 
 1. /assets/screenshot.png
-2. /assets/screenshot.png
+2. /assets/screenshot-widgets.png
 
 == Changelog ==
 
