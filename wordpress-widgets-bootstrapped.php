@@ -22,6 +22,7 @@
  * This plugin does the following on activation:
  * - Checks if Widget Output Filters is activated and if not deactivate itself.
  * - Filters the html markup to support Bootstrap 3 styling. Without Botstrap enqueued it won't appear to do anything.
+ * - Supports - categories, calendar, tag cloud, archives, meta, recent-posts, recent-comments, pages, nav-menu, search
  */
  
 defined( 'WPINC' ) or die;
