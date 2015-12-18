@@ -1,13 +1,12 @@
 <?php
 /**
- * These are alternate options for current setup
+ * This is alternate markpup options for current setup. Replace these in the main plugin if you want them
  */
    
   // recent-posts  (change from list group with small date to list group with label date)
-  $widget_output = str_replace('<ul>', '<ul class="list-group">', $widget_output);
-  $widget_output = str_replace('<li>', '<li class="list-group-item recent-posts-list-group-item">', $widget_output);
-	$widget_output = str_replace('class="post-date"', 'class="post-date label label-primary"', $widget_output);
-
+	$widget_output = str_replace('<ul>', '<ul class="list-group">', $widget_output);
+	$widget_output = str_replace('<li>', '<li class="list-group-item recent-posts-list-group-item">', $widget_output);
+  	$widget_output = str_replace('class="post-date"', 'class="post-date label label-primary"', $widget_output);
 
 
 /**
@@ -17,21 +16,21 @@
  */
 
   // categories  (list unstyled with badge)
-    $widget_output = str_replace('<ul>', '<ul class="list-unstyled">', $widget_output);
-	  $widget_output = str_replace('(', '<span class="badge cat-item-count"> ', $widget_output);
-   	$widget_output = str_replace(')', ' </span>', $widget_output);
+	$widget_output = str_replace('<ul>', '<ul class="list-unstyled">', $widget_output);
+	$widget_output = str_replace('(', '<span class="badge cat-item-count"> ', $widget_output);
+	$widget_output = str_replace(')', ' </span>', $widget_output);
 
   // meta  (list unstyled)
-    $widget_output = str_replace('<ul>', '<ul class="list-unstyled">', $widget_output);
+	$widget_output = str_replace('<ul>', '<ul class="list-unstyled">', $widget_output);
 
   // nav_menu  (list unstyled)
-    $widget_output = str_replace(' class="menu"', 'class="menu list-unstyled"', $widget_output);
+	$widget_output = str_replace(' class="menu"', 'class="menu list-unstyled"', $widget_output);
 
  // recent-posts  (list unstyled)
-    $widget_output = str_replace('<ul>', '<ul class="list-unstyled">', $widget_output);
+	$widget_output = str_replace('<ul>', '<ul class="list-unstyled">', $widget_output);
 
   // recent-comments (list-unstyled)
-    $widget_output = str_replace('<ul id="recentcomments">', '<ul id="recentcomments" class="list-unstyled">', $widget_output);
+	$widget_output = str_replace('<ul id="recentcomments">', '<ul id="recentcomments" class="list-unstyled">', $widget_output);
 
   // pages (list-unstyled)
-    $widget_output = str_replace('<ul>', '<ul class="list-unstyled">', $widget_output);
+	$widget_output = str_replace('<ul>', '<ul class="list-unstyled">', $widget_output);
