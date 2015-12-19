@@ -50,9 +50,9 @@ Here are some recomended Bootstrap themes that this should work with:
 If you're using genesis and want to use your own child theme you can get complete integration for Bootstrap with my other plugin that integrates this as well as all Bootstrap markup necessary for [Genesis support](https://github.com/Wordpress-Development/genesis-bootstrap).
 
 
-Optionally visit the [Bootstrap Live Customizer](http://bootstrap-live-customizer.com/) to download a custom version of Bootstrap for the above themes and then simply download it and enqueue it in your `functions.php`. If there is anoter version of bootstrap that you want to remove, see the examples in the [wordpress-widgets-bootstrapped.php file](https://github.com/Wordpress-Development/wordpress-widgets-bootstrapped/blob/master/wordpress-widgets-bootstrapped.php#L130)
+Optionally visit the [Bootstrap Live Customizer](http://bootstrap-live-customizer.com/) to download a custom version of Bootstrap for the above themes and then simply download it and enqueue it in your `functions.php`. If there is anoter version of bootstrap that you want to remove, see the examples in the [wordpress-widgets-bootstrapped.php file](https://github.com/Wordpress-Development/wordpress-widgets-bootstrapped/blob/master/wordpress-widgets-bootstrapped.php#L130).
 
 
 ## Contributing
 
-Full thanks to [Philip Newcomber](https://philipnewcomer.net/2014/06/filter-output-wordpress-widget/) and [his plugin](https://wordpress.org/plugins/widget-output-filters/) that allows this plugin work.
+Full thanks to [Philip Newcomber](https://philipnewcomer.net/2014/06/filter-output-wordpress-widget/) and [his plugin](https://wordpress.org/plugins/widget-output-filters/) that allows this plugin work!
