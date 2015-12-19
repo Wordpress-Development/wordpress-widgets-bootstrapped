@@ -22,22 +22,8 @@ Here are some reccomended Bootstrap themes that this should work with:
 * [Sage](https://github.com/roots/sage)
 
 
-Optionally visit the [Bootstrap Live Customizer](http://bootstrap-live-customizer.com/) to download a custom version of Bootstrap for the above themes and then simply download it and enqueue it in your `functions.php`. If there is anoter version of bootstrap that you want to remove, see the following example on how to do with the [Bootstrap Genesis](https://github.com/salcode/bootstrap-genesis) theme.
+Optionally visit the [Bootstrap Live Customizer](http://bootstrap-live-customizer.com/) to download a custom version of Bootstrap for the above themes and then simply download it and enqueue it in your `functions.php`. If there is anoter version of bootstrap that you want to remove, see the examples in the [wordpress-widgets-bootstrapped.php file](https://github.com/Wordpress-Development/wordpress-widgets-bootstrapped/blob/master/wordpress-widgets-bootstrapped.php#L130)
 
-```php
-function mytheme_custom_bootstrap() {
-    // if bootstrap is already registered...
-    if( wp_script_is( 'bsg_combined_css', 'enqueued' ) ) {
-        // ...dequeue it...
-        wp_dequeued_style( 'bsg_combined_css' );
-        // ...and re-register and enqueue it with our own, modified bootstrap...
-        wp_register_style( 'bootstrap', get_stylesheet_directory_uri() . '/css/custom-bootstrap.css' );
-        // ...and enqueue it!
-        wp_enqueue_style( 'bootstrap' );
-    }
-}
-add_action( 'wp_enqueue_scripts', 'mytheme_custom_bootstrap' );
-```
 
 
 ## Quick start
