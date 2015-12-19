@@ -11,7 +11,7 @@ This plugin was developed for Wordpress sites looking to "Bootstrap" their Wordp
 
 ##### How it Works
 
-* Applies [Twitter Bootstrap 3](http://getbootstrap.com) to the default [Wordpress widgets](https://codex.wordpress.org/WordPress_Widgets)
+* Applies [Twitter Bootstrap 3 HTML](http://getbootstrap.com) to the default [Wordpress widgets](https://codex.wordpress.org/WordPress_Widgets)
 * Requires [Widget Output Fiters](https://wordpress.org/plugins/widget-output-filters/) be installed on activation which includes a very useful filter to override any additional widgets you may have and can be used side by side with [Widget Logic](https://wordpress.org/plugins/widget-logic/)
 
 ## Quick start
