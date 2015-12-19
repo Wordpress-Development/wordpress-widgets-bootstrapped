@@ -28,7 +28,7 @@ function activate_wop_bootstrap_register_activation_hook() {
 	$admin_url = admin_url().'/plugin-install.php?tab=plugin-information&plugin=widget-output-filters';
 	if ( ! function_exists('widget_output_filters_dynamic_sidebar_params') ) {
 		deactivate_plugins( plugin_basename( __FILE__ ) );
-		wp_die( sprintf( __( 'This theme requires a bootstrap supported theme and Widget Output Filters to work. To activate %1$sBootstrap-Widget-Filters%2$s please %3$sinstall Widget Output Filters%4$s or optionally back to the %5$sPlugins Page%4$s. to activate it' ), '<em>', '</em>', '<a href="'.$admin_url.'" target="_blank">', '</a>', '<a href="javascript:history.back()">' ) );
+		wp_die( sprintf( __( 'This plugin REQUIRES a bootstrap supported theme and Widget Output Filters to work. To activate %1$sBootstrap-Widget-Filters%2$s please make sure you have Bootstrap 3 enqueued and either %3$sinstall Widget Output Filters%4$s or optionally back to the %5$sPlugins Page%4$s. to activate it' ), '<em>', '</em>', '<a href="'.$admin_url.'" target="_blank">', '</a>', '<a href="javascript:history.back()">' ) );
 	}
 }
 
