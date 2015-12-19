@@ -28,13 +28,18 @@ function activate_wop_bootstrap_register_activation_hook() {
 	$admin_url = admin_url().'/plugin-install.php?tab=plugin-information&plugin=widget-output-filters';
 	if ( ! function_exists('widget_output_filters_dynamic_sidebar_params') ) {
 		deactivate_plugins( plugin_basename( __FILE__ ) );
-		wp_die( sprintf( __( 'This theme requires a bootstrap supported theme and Widget Output Filters to work. You can\'t activate %1$sBootstrap-Widget-Filters%2$s until you install or activate the %3$sWidget Output Filters Plugin%4$s. Go back to the %5$sPlugins Page%4$s.' ), '<em>', '</em>', '<a href="'.$admin_url.'" target="_blank">', '</a>', '<a href="javascript:history.back()">' ) );
+		wp_die( sprintf( __( 'This theme requires a bootstrap supported theme and Widget Output Filters to work. To activate %1$sBootstrap-Widget-Filters%2$s please %3$sinstall Widget Output Filters%4$s or optionally back to the %5$sPlugins Page%4$s. to activate it' ), '<em>', '</em>', '<a href="'.$admin_url.'" target="_blank">', '</a>', '<a href="javascript:history.back()">' ) );
 	}
 }
 
-/** 
- * Bootstrap 3 support for core wordpress widgets 
- */
+
+
+
+/******************************************************************************************/
+/*   Bootstrap 3 Widget Filters                                                           */
+/******************************************************************************************/
+
+//*
 function wop_bootstrap_widget_output_filters( $widget_output, $widget_type, $widget_id ) {
 	
 	switch( $widget_type ) {
@@ -88,9 +93,12 @@ add_filter( 'widget_output', 'wop_bootstrap_widget_output_filters', 10, 3 ); // 
 
 
 
-/** 
- * Search form created seperately... decided to use Wordpress builtin functionality for this
- */
+
+/******************************************************************************************/
+/*   Search Form - Using native in wordpress filter                                       */
+/******************************************************************************************/
+
+//*
 add_filter( 'get_search_form', 'wop_bootstrap_search_form', 100);
 function wop_bootstrap_search_form() {
     $value_or_placeholder = ( get_search_query() == '' ) ? 'placeholder' : 'value';
@@ -113,6 +121,8 @@ $form = '<form method="get" class="search-form form-inline" action="'.home_url( 
 </form>';
     return $form;
 }
+// */
+
 
 
 
@@ -143,17 +153,16 @@ add_action( 'wp_enqueue_scripts', 'mytheme_custom_bootstrap' );
 /******************************************************************************************/
 
 /*
-// Register Style
 function mytheme_custom_bootstrap_cdn() {
 
-	wp_register_style( 'bootstrap-css', 'https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css', false, '3.3.6', 'all' );
+	// Register and Enqueue Style
+	wp_register_style( 'bootstrap-css', 'https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css', false, false, 'all' );
 	wp_enqueue_style( 'bootstrap-css' );
 	
-	wp_register_script( 'bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/latest/js/bootstrap.min.js', false, '3.3.6', 'all' );
-	wp_enqueue_style( 'bootstrap-js' );
+	// Register and Enqueue Script
+	wp_register_script( 'bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.js', array( 'jquery' ), false, true );
+	wp_enqueue_script( 'bootstrap-js' );
 	
-
 }
 add_action( 'wp_enqueue_scripts', 'mytheme_custom_bootstrap_cdn' );
 // */
-
