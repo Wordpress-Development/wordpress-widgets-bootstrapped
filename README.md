@@ -18,7 +18,8 @@ This plugin was developed for Wordpress sites looking to "Bootstrap" their Wordp
 
 1. Download this plugin and upload it in your wordpress admin dashboard
 2. Activate a Bootstrap theme if you haven't already
-3. Add any of the supported widgets to a registered sidebar.
+3. Activate Widget Output Filters when prompted
+4. Add any of the supported widgets to a registered sidebar.
 
 
 ## Core Widgets Support
