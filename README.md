@@ -12,7 +12,19 @@ Wordpress Widgets Bootstrapped is a Wordpress plugin that applies Bootstrap 3 ht
 * Uses [Widget Output Fiters](https://wordpress.org/plugins/widget-output-filters/) which includes a very useful filter to override any additional widgets you may have and can be used side by side with [Widget Logic](https://wordpress.org/plugins/widget-logic/)
 
 
+<br>
+<br>
+## Quick start
 
+Choose one of the following options:
+
+1. Download the latest stable release from
+   [html5boilerplate.com](https://html5boilerplate.com/) or create a
+   custom build using [Initializr](http://www.initializr.com).
+2. Clone the git repo — `git clone
+   https://github.com/h5bp/html5-boilerplate.git` - and checkout the
+   [tagged release](https://github.com/h5bp/html5-boilerplate/releases)
+   you'd like to use.
 
 Note the demo in the above link is a sandbox site that I'm frequently changing so it may not reflect the widgets in this plugin.
 
