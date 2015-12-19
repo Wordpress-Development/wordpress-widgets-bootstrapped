@@ -13,15 +13,26 @@ Wordpress Widgets Bootstrapped is a Wordpress plugin that applies Bootstrap 3 ht
 
 ## Quick start
 
-Choose one of the following options:
+1. Download this plugin and upload it in your wordpress admin dashboard
+2. Activate a Bootstrap theme if you haven't already
+3. Add any of the supported widgets to a registered sidebar.
 
-1. Download the latest stable release from
-   [html5boilerplate.com](https://html5boilerplate.com/) or create a
-   custom build using [Initializr](http://www.initializr.com).
-2. Clone the git repo — `git clone
-   https://github.com/h5bp/html5-boilerplate.git` - and checkout the
-   [tagged release](https://github.com/h5bp/html5-boilerplate/releases)
-   you'd like to use.
+
+## Core Widgets Support
+
+* archives => 
+* calendar => [Bootstrap tables](http://getbootstrap.com/css/#tables)
+* categories =>
+* meta =>
+* nav_menu =>
+* pages =>
+* recent-comments =>
+* recent-posts =>
+* search => [Bootstrap styled search](]http://codepen.io/bootstrapped/details/YyZOJe/)
+* tag_cloud => [Bootstrap labels](http://getbootstrap.com/components/#labels)
+
+
+
 
 Note the demo in the above link is a sandbox site that I'm frequently changing so it may not reflect the widgets in this plugin.
 
@@ -35,34 +46,8 @@ Optionally visit the [Bootstrap Live Customizer](http://bootstrap-live-customize
 
 
 
-## Quick start
-
-Choose one of the following options:
-
-1. Download the latest stable release from
-   [html5boilerplate.com](https://html5boilerplate.com/) or create a
-   custom build using [Initializr](http://www.initializr.com).
-2. Clone the git repo — `git clone
-   https://github.com/h5bp/html5-boilerplate.git` - and checkout the
-   [tagged release](https://github.com/h5bp/html5-boilerplate/releases)
-   you'd like to use.
 
 
-
-
-
-## Core Widgets Chages
-
-* archives - 
-* calendar
-*categories
-* meta
-* nav_menu
-* pages
-* recent-comments
-* recent-posts - 
-* search -
-* tag_cloud - [Bootstrap labels](http://getbootstrap.com/components/#labels)
 
 
 _No changes made to `rss` or `text` widgets_
