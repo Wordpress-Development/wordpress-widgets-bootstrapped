@@ -1,7 +1,7 @@
 # Wordpress Widgets Bootstrapped
 
 
-<img align="right" width="300" src="https://github.com/Wordpress-Development/wordpress-widgets-bootstrapped/blob/master/assets/screenshot.jpg">
+<img align="right" width="470" src="https://github.com/Wordpress-Development/wordpress-widgets-bootstrapped/blob/master/assets/screenshot.jpg">
 
 
 Wordpress Widgets Bootstrapped is a Wordpress plugin that applies Bootstrap 3 html to the default wordpress widgets. 
