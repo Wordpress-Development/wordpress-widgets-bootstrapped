@@ -4,7 +4,9 @@
 <img align="right" width="350" src="https://github.com/Wordpress-Development/wordpress-widgets-bootstrapped/blob/master/assets/screenshot.jpg">
 
 
-Wordpress Widgets Bootstrapped is a Wordpress plugin that applies Bootstrap 3 html to the default wordpress widgets. This plugin was developed for Wordpress sites looking to "Bootstrap" their Wordpress widgets. It's important to note that this plugin is experimental and I have no guarantees. To contribute either open a pull request or [join the conversation](https://wordpress.org/support/topic/add-option-for-sidebar-paramater?replies=2) on the Widget Output Filters support forum where we are discussing new features including the ability to apply filters on specific sidebars. Currently the only way to do this is by using a theme like Genesis that lets you add and remove the `widget_output` filter to specific action hooks. See [this example](https://github.com/Wordpress-Development/genesis-bootstrap/blob/master/lib/bootstrap-widgets.php#L416) on how to do that. 
+Wordpress Widgets Bootstrapped is a Wordpress plugin that applies Bootstrap 3 html to the default wordpress widgets. This plugin was developed for Wordpress sites looking to "Bootstrap" their Wordpress widgets. It's important to note that this plugin is experimental and I have no guarantees. 
+
+To contribute either open a pull request or [join the conversation](https://wordpress.org/support/topic/add-option-for-sidebar-paramater?replies=2) on the Widget Output Filters support forum where we are discussing new features including the ability to apply filters on specific sidebars. Currently the only way to do this is by using a theme like Genesis that lets you add and remove the `widget_output` filter to specific action hooks. See [this example](https://github.com/Wordpress-Development/genesis-bootstrap/blob/master/lib/bootstrap-widgets.php#L416) on how to do that. 
 
 ##### How it Works
 
