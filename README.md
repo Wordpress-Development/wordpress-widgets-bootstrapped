@@ -1,4 +1,4 @@
-# [Wordpress Widgets Bootstrapped](http://gb3.wpengine.com/hello-world/)
+# Wordpress Widgets Bootstrapped
 
 
 <img align="right" width="275" src="https://github.com/Wordpress-Development/wordpress-widgets-bootstrapped/blob/master/assets/screenshot.jpg">
@@ -20,23 +20,23 @@ Wordpress Widgets Bootstrapped is a Wordpress plugin that applies Bootstrap 3 ht
 
 ## Core Widgets Support
 
-* archives => 
+* archives => [Bootstrap list-group badges](http://getbootstrap.com/components/#list-group-badges)
 * calendar => [Bootstrap tables](http://getbootstrap.com/css/#tables)
-* categories =>
-* meta =>
-* nav_menu =>
-* pages =>
-* recent-comments =>
-* recent-posts =>
+* categories => [Bootstrap list-group badges](http://getbootstrap.com/components/#list-group-badges)
+* meta => [Bootstrap list-group](http://getbootstrap.com/components/#list-group)
+* nav_menu => [Bootstrap nav-pills](http://getbootstrap.com/components/#nav-pills)
+* pages => [Bootstrap nav-pills](http://getbootstrap.com/components/#nav-pills)
+* recent-comments => [Bootstrap list-group](http://getbootstrap.com/components/#list-group)
+* recent-posts => [Bootstrap list-group with text-muted small applied](http://getbootstrap.com/components/#list-group)
 * search => [Bootstrap styled search](]http://codepen.io/bootstrapped/details/YyZOJe/)
 * tag_cloud => [Bootstrap labels](http://getbootstrap.com/components/#labels)
 
+[To see a screenshot of all the supported widgets click here/.](https://github.com/Wordpress-Development/wordpress-widgets-bootstrapped/blob/master/assets/screenshot-widgets.jpg
+)
 
 
 
-Note the demo in the above link is a sandbox site that I'm frequently changing so it may not reflect the widgets in this plugin.
-
-Here are some reccomended Bootstrap themes that this should work with:
+Here are some recomended Bootstrap themes that this should work with:
 * [Bootstrap Genesis](https://github.com/salcode/bootstrap-genesis)
 * [320press](https://github.com/320press/wordpress-bootstrap)
 * [Sage](https://github.com/roots/sage)
