@@ -113,3 +113,47 @@ $form = '<form method="get" class="search-form form-inline" action="'.home_url( 
 </form>';
     return $form;
 }
+
+
+
+/******************************************************************************************/
+/*   Removes a version of Bootstrap included with your theme and add your own local copy  */
+/******************************************************************************************/
+
+/*
+function mytheme_custom_bootstrap() {
+    // if bootstrap is already registered...
+    if( wp_script_is( 'bsg_combined_css', 'enqueued' ) ) {
+        // ...dequeue it...
+        wp_dequeued_style( 'bsg_combined_css' );
+        // ...and re-register and enqueue it with our own, modified bootstrap...
+        wp_register_style( 'bootstrap', get_stylesheet_directory_uri() . '/css/custom-bootstrap.css' );
+        // ...and enqueue it!
+        wp_enqueue_style( 'bootstrap' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'mytheme_custom_bootstrap' );
+// */
+
+
+
+
+/******************************************************************************************/
+/*   Enqueue latest bootstrap stylesheet and javascript from Bootstrap CDN                */
+/******************************************************************************************/
+
+/*
+// Register Style
+function mytheme_custom_bootstrap_cdn() {
+
+	wp_register_style( 'bootstrap-css', 'https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css', false, '3.3.6', 'all' );
+	wp_enqueue_style( 'bootstrap-css' );
+	
+	wp_register_script( 'bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/latest/js/bootstrap.min.js', false, '3.3.6', 'all' );
+	wp_enqueue_style( 'bootstrap-js' );
+	
+
+}
+add_action( 'wp_enqueue_scripts', 'mytheme_custom_bootstrap_cdn' );
+// */
+
