@@ -28,7 +28,7 @@ Wordpress Widgets Bootstrapped is a Wordpress plugin that applies Bootstrap 3 ht
 * pages => [Bootstrap nav-pills](http://getbootstrap.com/components/#nav-pills)
 * recent-comments => [Bootstrap list-group](http://getbootstrap.com/components/#list-group)
 * recent-posts => [Bootstrap list-group with text-muted small applied](http://getbootstrap.com/components/#list-group)
-* search => [Bootstrap styled search](]http://codepen.io/bootstrapped/details/YyZOJe/)
+* search => [Bootstrap styled search](http://codepen.io/bootstrapped/details/YyZOJe/)
 * tag_cloud => [Bootstrap labels](http://getbootstrap.com/components/#labels)
 
 [To see a screenshot of all the supported widgets click here/.](https://github.com/Wordpress-Development/wordpress-widgets-bootstrapped/blob/master/assets/screenshot-widgets.jpg
