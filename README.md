@@ -55,6 +55,8 @@ Optionally visit the [Bootstrap Live Customizer](http://bootstrap-live-customize
 
 ## Contributing
 
+I decided to put this into a plugin after seeing large number of requests for ths on [Stackoverflow](http://wordpress.stackexchange.com/a/211634/43806). I'm hoping eventually if enough people start contributing to Widget Output Filters that something like this will be added to core.
+
 To contribute either open a pull request or [join the conversation](https://wordpress.org/support/topic/add-option-for-sidebar-paramater?replies=2) on the Widget Output Filters support forum where we are discussing new features for that plugin including the ability to apply filters on specific sidebars. Currently the only way to do this is by using a theme like Genesis that lets you add and remove the `widget_output` filter to specific action hooks. See [this example](https://github.com/Wordpress-Development/genesis-bootstrap/blob/master/lib/bootstrap-widgets.php#L416) on how to do that. 
 
 Full thanks to [Philip Newcomber](https://philipnewcomer.net/2014/06/filter-output-wordpress-widget/) and [his plugin](https://wordpress.org/plugins/widget-output-filters/) that allows this plugin work!
