@@ -8,12 +8,10 @@ Wordpress Widgets Bootstrapped is a Wordpress plugin that applies Bootstrap 3 ht
 
 This plugin was developed for Wordpress sites looking to "Bootstrap" their Wordpress widgets. It is important to note that without actually using a theme that uses bootstrap css, this plugin will appear to do nothing.
 
-##### Features Include
+##### How it Works
 
 * Instantly apply [Twitter Bootstrap 3](http://getbootstrap.com) to the default [Wordpress widgets](https://codex.wordpress.org/WordPress_Widgets)
 * Uses [Widget Output Fiters](https://wordpress.org/plugins/widget-output-filters/) which includes a very useful filter to override any additional widgets you may have and can be used side by side with [Widget Logic](https://wordpress.org/plugins/widget-logic/)
-* 
-
 
 Note the demo in the above link is a sandbox site that I'm frequently changing so it may not reflect the widgets in this plugin.
 
