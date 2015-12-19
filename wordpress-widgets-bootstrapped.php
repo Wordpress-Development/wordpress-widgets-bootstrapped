@@ -4,7 +4,6 @@
  *
  * @package   Wordpress Widgets Bootstrapped
  * @author    Bryan Willis
- * @license   GPL-2.0+
  * @link      http://wordpress.stackexchange.com/a/211634/43806
  *
  * @wordpress-plugin
@@ -14,8 +13,6 @@
  * Version:           1.0.0
  * Author:            Bryan Willis
  * Author URI:        http://profiles.wordpress.org/codecandid
- * License:           GPL-2.0+
- * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  */
  
 /**
