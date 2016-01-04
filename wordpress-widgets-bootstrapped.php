@@ -40,7 +40,7 @@ function activate_wop_bootstrap_register_activation_hook() {
 /******************************************************************************************/
 
 //*
-function wop_bootstrap_widget_output_filters( $widget_output, $widget_type, $widget_id ) {
+function wop_bootstrap_widget_output_filters( $widget_output, $widget_type, $widget_id, $sidebar_id ) {
 	
 	switch( $widget_type ) {
 		
@@ -89,7 +89,7 @@ function wop_bootstrap_widget_output_filters( $widget_output, $widget_type, $wid
 	}
       return $widget_output;
 }
-add_filter( 'widget_output', 'wop_bootstrap_widget_output_filters', 10, 3 ); // not sure if this should be hooked into an action... maybe init or widgets_init
+add_filter( 'widget_output', 'wop_bootstrap_widget_output_filters', 10, 4 ); // not sure if this should be hooked into an action... maybe init or widgets_init
 
 
 
